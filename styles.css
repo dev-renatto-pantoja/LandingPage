@@ -305,5 +305,11 @@ footer .container a{
 }
 /* Desktop */
 @media screen and (min-width:600px){
-    
+    .menu label span{
+        display: none;
+    }
+    .menu ul{
+        flex-direction: row;
+        
+    }
 }
