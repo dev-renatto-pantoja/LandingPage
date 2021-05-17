@@ -163,6 +163,8 @@ header a:hover{
 .nosotros{
     position: relative;
     top:-95.5px;
+    display: flex;
+    flex-direction: column;
 
 }
 .venimos{
@@ -247,6 +249,9 @@ footer .container{
     background:linear-gradient(225deg, #0000ff 0%, #0000a3 100%);
     clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 10%); 
     padding:64px 16px 0 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 footer .container h2{
@@ -257,6 +262,7 @@ footer .container h2{
     letter-spacing: 0;
     text-align: center;
     line-height: 42px;
+    
 }
 footer .container a{
     display: flex;
@@ -304,12 +310,148 @@ footer .container a{
     
 }
 /* Desktop */
-@media screen and (min-width:600px){
+@media screen and (min-width:1000px){
+    nav{
+        margin:0 100px;
+        height: 80px;
+    }
+    nav img{
+        width: 36px;
+        height: 36px;
+    }
     .menu label span{
         display: none;
     }
     .menu ul{
         flex-direction: row;
+        position: initial;
+
+        background-color: #fff;
+        height: auto;
+        width: auto;
+    }
+    .menu ul li a{
+        color:#060A24;
+        line-height:28px;
+        margin-left: 48px;
+    }
+    header{
+        padding:0 0;
+        padding-left: 200px;
+    }
+    header h1{
+        margin-top: 120px;
+        font-size: 64px;
+    }
+    header .puntito{
+        color: #0000EC;
+    }
+    header p{
+        width: 628px;
+    }
+    header a{
+        margin-top: 56px;
+        width: 226px;
+        height: 56px;
+        font-size: 18px;
+    }
+    .episodios{
+        height: 1042.6px;
+        clip-path: polygon(100% 0, 100% 85%, 0 100%, 0 15%);   
+        padding: 186px 100px 0 100px;
+    }
+    .episodios h2{
+        margin-left: 100px;
+        margin-bottom: 26px;
+    }
+    .podcast{
+        width: 100%;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .podcast iframe {
+        width: 45%;
+        height: 232px;
+    }
+    .podcast iframe:nth-child(odd){
+        margin-right: 36px;
+
+    }
+    .podcast iframe:nth-child(even){
+        margin-left: 36px;
+    }
+    .podcast iframe:last-child{
+        margin-top: 72px;
+    }
+    .nosotros{
+        flex-direction: row;
+        top: -156px;
+        justify-content: center;
+    }
+    .nosotros img{
         
+        width: 457.6px;
+    }
+    .venimos{
+        padding-top: 189px;
+    }
+    .venimos h2{
+        margin-bottom: 24px;
+        font-size: 48px;
+        line-height: 62px;
+    }
+    .venimos p{
+        width: 464px;
+        font-size: 16px;
+        margin-bottom: 12px;
+    }
+    .invitados h2{
+        margin-left: 200px;
+        font-size: 48px;
+    }
+    .photo_container{
+        width: 100%;
+    }
+    .invitados img{
+        width: 33.3%;
+    }
+    .temas{
+        align-items:flex-start;
+    }
+    .temas h2{
+        font-size: 48px;
+        line-height: 62px;
+        margin-left: 200px;
+    }
+    .themes_container{
+        flex-direction: row;
+        justify-content: center;
+        margin-bottom: 34px;
+    }
+    .theme img{
+        width: 104px;
+        margin: 26px 156px;
+    }
+    footer .container{
+    
+        clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 25%); 
+        padding: 213px 16px 0 16px;
+        height: 518px;
+    }
+    footer .container h2{
+        margin-top: 36px;
+        font-size: 48px;
+    }
+    footer .container a{
+        width: 345px;
+        height: 56px;
+        font-size: 18px;
+    }
+    footer .datos{
+        flex-direction: row;
+        justify-content: space-between;
+        margin: 0 100px;
+        height: 80px;
     }
 }
