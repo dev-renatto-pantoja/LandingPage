@@ -296,6 +296,10 @@ footer .container a{
     text-transform: uppercase;
     text-decoration: none;
 }
+footer .container a:hover{
+    background: linear-gradient(225deg, #0000FE 0%, #00F0B8 100%);
+    color:#fff;
+}
 .datos{
     display: flex;
     flex-direction: column;
@@ -315,6 +319,9 @@ footer .container a{
     margin-right: 34px;
     text-decoration: none;
     color: #060A24;
+}
+.icons a:hover{
+    color: #00F3BB;
 }
 .icons a:last-child{
     margin-right: 0;
