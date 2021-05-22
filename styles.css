@@ -371,11 +371,14 @@ footer .container a{
         clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 20%); 
         justify-content: center;
     }
+    footer .container a{
+        width: 345px;
+        height: 56px;
+        font-size: 18px;
+    }
 }
-/* Desktop */
-@media screen and (min-width:1000px){
+@media screen and (min-width:750px){
     nav{
-        margin:0 100px;
         height: 80px;
     }
     nav img{
@@ -387,6 +390,7 @@ footer .container a{
     }
     .menu ul{
         flex-direction: row;
+        justify-content: space-between;
         position: initial;
 
         background-color: #fff;
@@ -399,12 +403,11 @@ footer .container a{
         margin-left: 48px;
     }
     header{
-        padding:0 0;
-        padding-left: 200px;
+        padding:0 16px;
     }
     header h1{
-        margin-top: 120px;
-        font-size: 64px;
+        margin-top: 80px;
+        font-size: 48px;
     }
     header .puntito{
         color: #0000EC;
@@ -424,14 +427,40 @@ footer .container a{
         height: 56px;
         font-size: 18px;
     }
+    footer .datos{
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0 0;
+        padding: 0 16px;
+        height: 80px;
+    }
+    footer .datos p{
+        margin: 0 0;
+    }
+}
+/* Desktop */
+@media screen and (min-width:1000px){
+    nav{
+        margin: 0 100px;
+    }
+    header{
+        padding:0 0;
+        padding-left: 100px;
+    }
+    header h1{
+        margin-top: 120px;
+        font-size: 64px;
+    }
     .episodios{
         height: 1042.6px;
-        clip-path: polygon(100% 0, 100% 85%, 0 100%, 0 15%);   
+        clip-path: polygon(100% 0, 100% 90%, 0 100%, 0 10%);   
         padding: 186px 100px 0 100px;
     }
     .episodios h2{
-        margin-left: 100px;
+        
         margin-bottom: 26px;
+        font-size: 48px;
     }
     
     .podcast iframe {
@@ -471,12 +500,13 @@ footer .container a{
         margin-bottom: 12px;
     }
     .invitados h2{
-        margin-left: 200px;
+        margin-left: 100px;
         font-size: 48px;
     }
     .photo_container{
         width: 100%;
     }
+    
     .invitados img{
         width: 33.3%;
     }
@@ -484,6 +514,7 @@ footer .container a{
         align-items:flex-start;
     }
     .temas h2{
+        margin-left: 100px;
         font-size: 48px;
         line-height: 62px;
     }
@@ -504,23 +535,16 @@ footer .container a{
     footer .container{
     
         clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 25%); 
-        padding: 213px 16px 0 16px;
+        padding: 36px 16px 0 16px;
         height: 518px;
     }
     footer .container h2{
         margin-top: 36px;
         font-size: 48px;
     }
-    footer .container a{
-        width: 345px;
-        height: 56px;
-        font-size: 18px;
-    }
+    
     footer .datos{
-        flex-direction: row;
-        justify-content: space-between;
         margin: 0 100px;
-        height: 80px;
     }
 }
 
@@ -529,7 +553,7 @@ footer .container a{
         padding-left: 200px;
     }
     .episodios h2{
-        margin-left: 200px;
+        margin-left: 100px;
     }
     .invitados h2{
         margin-left: 200px;
@@ -537,4 +561,8 @@ footer .container a{
     .temas{
         margin: 0 200px;
     }
+    .temas h2{
+        margin: 0 0;
+    }
+
 }
